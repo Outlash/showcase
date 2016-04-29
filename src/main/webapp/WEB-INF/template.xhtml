@@ -50,7 +50,7 @@
                 <h:graphicImage name="main/images/logo.svg" />
                 <h:graphicImage id="BlueLogo" styleClass="hiddenLogo" name="main/images/logoBlue.svg" />
             </span>
-            <div class="MenuSideMainLink bordersOfMenuSide"><h:graphicImage name="main/images/zoom.svg" class="zoomIcon"/><input id="menuSearch" type="text" placeholder="Search Menu" class="mediumFont fontSize14 mustClose searchInput"/></div>
+            <div class="MenuSideMainLink bordersOfMenuSide"><h:graphicImage name="main/images/zoom.svg" class="zoomIcon"/><input id="menuSearch" type="text" placeholder="Search Menu" class="boldFont fontSize14 mustClose searchInput"/></div>
             
             <span id="SubMenu-Ajax" class="MenuSideMainLink bordersOfMenuSide" onclick="Showcase.openSubMenu(this);"><h:graphicImage name="main/images/mono/ajaxCore.svg" /><h:graphicImage styleClass="hiddenIcons" name="main/images/mono/ajaxCoreBlue.svg" /><span class="MainLinkText">Ajax Core</span></span>
             <div class="SubMenuLinkContainer">
@@ -99,6 +99,8 @@
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/input/rating.xhtml">&bull; Rating</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/input/colorPicker.xhtml">&bull; ColorPicker</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/input/inplace.xhtml">&bull; Inplace</a>
+                <a class="SubMenuLink" href="#{request.contextPath}/ui/input/keyFilter.xhtml">&bull; KeyFilter</a>
+                <a class="SubMenuLink" href="#{request.contextPath}/ui/input/knob.xhtml">&bull; Knob</a>
             </div>
             
             <span id="SubMenu-Button" class="MenuSideMainLink bordersOfMenuSide" onclick="Showcase.openSubMenu(this);"><h:graphicImage name="main/images/mono/button.svg" /><h:graphicImage styleClass="hiddenIcons" name="main/images/mono/buttonBlue.svg" /><span class="MainLinkText">Button</span></span>
@@ -123,12 +125,14 @@
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/gmap/basic.xhtml">&bull; GMap</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/dataexporter/basic.xhtml">&bull; DataExporter</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/mindmap.xhtml">&bull; Mindmap</a>
+                <a class="SubMenuLink" href="#{request.contextPath}/ui/data/repeat.xhtml">&bull; Repeat</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/ring.xhtml">&bull; Ring</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/schedule.xhtml">&bull; Schedule</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/tagCloud.xhtml">&bull; TagCloud</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/tree/basic.xhtml">&bull; Tree</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/treetable/basic.xhtml">&bull; TreeTable</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/data/htree/basic.xhtml">&bull; HorizontalTree</a>
+                <a class="SubMenuLink" href="#{request.contextPath}/ui/data/timeline.xhtml">&bull; Timeline</a>
             </div>
             
             <span id="SubMenu-Panel" class="MenuSideMainLink bordersOfMenuSide" onclick="Showcase.openSubMenu(this);"><h:graphicImage name="main/images/mono/panel.svg" /><h:graphicImage styleClass="hiddenIcons" name="main/images/mono/panelBlue.svg" /><span class="MainLinkText">Panel</span></span>
@@ -243,6 +247,7 @@
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/df/basic.xhtml">&bull; Basic</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/df/data.xhtml">&bull; Data</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/df/message.xhtml">&bull; Message</a>
+                <a class="SubMenuLink" href="#{request.contextPath}/ui/df/nested.xhtml">&bull; Nested</a>
             </div>
             
             <span id="SubMenu-Misc" class="MenuSideMainLink bordersOfMenuSide" onclick="Showcase.openSubMenu(this);"><h:graphicImage name="main/images/mono/misc.svg" /><h:graphicImage styleClass="hiddenIcons" name="main/images/mono/miscBlue.svg" /><span class="MainLinkText">Misc</span></span>
@@ -261,6 +266,8 @@
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/focus.xhtml">&bull; Focus</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/hotkey.xhtml">&bull; Hotkey</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/idleMonitor.xhtml">&bull; IdleMonitor</a>
+                <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/importConstants.xhtml">&bull; ImportConstants</a>
+                <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/importEnum.xhtml">&bull; ImportEnum</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/log.xhtml">&bull; Log</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/outputLabel.xhtml">&bull; OutputLabel</a>
                 <a class="SubMenuLink" href="#{request.contextPath}/ui/misc/printer.xhtml">&bull; Printer</a>
@@ -290,7 +297,7 @@
 			<div class="ContentSideSections" id="PFTopLinksCover" style="height:60px;">
                 <a id="LOGOTEXTSIDE" href="#{request.contextPath}/index.xhtml">
                     <span class="dispBlock logoDarkText fontSize30">PrimeFaces</span>
-                    <span class="dispBlock logoBlueText fontSize30 mediumFont">SHOWCASE</span>
+                    <span class="dispBlock logoBlueText fontSize28 regularFont">SHOWCASE</span>
                 </a>
                 
                 <a href="#{request.contextPath}/ui/misc/mockosx.xhtml" class="PFTopLinks floatRight boldFont marginRight20"><h:graphicImage name="main/images/pfMockosx.svg" /><span class="PFGrayText">PF</span><span class="PFDarkText">MockOSX</span></a>
@@ -322,9 +329,9 @@
                 
                 <div class="mobileLogoCover">
                     <h:graphicImage name="main/images/logoBlue.svg" style="height:40px;" styleClass="floatLeft marginRight10"/>
-                    <span class="dispBlock logoDarkText fontSize16 floatLeft">PrimeFaces <span class="dispBlock logoBlueText fontSize18 mediumFont">SHOWCASE</span></span> 
+                    <span class="dispBlock logoDarkText fontSize16 floatLeft">PrimeFaces <span class="dispBlock logoBlueText fontSize18 boldFont">SHOWCASE</span></span> 
                 </div>
-                <select id="mobilemenu" class="selectmenu mediumFont">
+                <select id="mobilemenu" class="selectmenu regularFont">
                     <option value="">Menu</option>
                     <option value="#{request.contextPath}/index.xhtml" class="LEVEL1">Home</option>
                     <optgroup label="Ajax Framework" class="LEVEL1">
@@ -354,6 +361,9 @@
                         <option value="#{request.contextPath}/ui/input/editor.xhtml">Editor</option> 
                         <option value="#{request.contextPath}/ui/input/inputText.xhtml">InputText</option>
                         <option value="#{request.contextPath}/ui/input/inputMask.xhtml">InputMask</option>
+                        <option value="#{request.contextPath}/ui/input/inputNumber.xhtml">InputNumber</option>
+                        <option value="#{request.contextPath}/ui/input/keyFilter.xhtml">KeyFilter</option>
+                        <option value="#{request.contextPath}/ui/input/knob.xhtml">Knob</option>
                         <option value="#{request.contextPath}/ui/input/listbox.xhtml">Listbox</option>
                         <option value="#{request.contextPath}/ui/input/manyButton.xhtml">ManyButton</option>
                         <option value="#{request.contextPath}/ui/input/manyMenu.xhtml">ManyMenu</option> 
@@ -430,6 +440,7 @@
                         <option value="#{request.contextPath}/ui/data/gmap/controls.xhtml">GMap - Controls</option>
                         <option value="#{request.contextPath}/ui/data/gmap/mapDialog.xhtml">GMap - Map in Dialog</option>
                         <option value="#{request.contextPath}/ui/data/gmap/geocode.xhtml">GMap - Geocode</option>
+                        <option value="#{request.contextPath}/ui/data/repeat.xhtml">Repeat</option>
                         <option value="#{request.contextPath}/ui/data/ring.xhtml">Ring</option>
                         <option value="#{request.contextPath}/ui/data/schedule.xhtml">Schedule</option>
                         <option value="#{request.contextPath}/ui/data/tagCloud.xhtml">TagCloud</option>
@@ -453,6 +464,7 @@
                         <option value="#{request.contextPath}/ui/data/treetable/scroll.xhtml">TreeTable - Scroll</option>
                         <option value="#{request.contextPath}/ui/data/treetable/resize.xhtml">TreeTable - Resize</option>
                         <option value="#{request.contextPath}/ui/data/treetable/sort.xhtml">TreeTable - Sort</option>
+                        <option value="#{request.contextPath}/ui/data/timeline.xhtml">Timeline</option>
                     </optgroup>
                     <optgroup label="Panel" class="LEVEL1">
                         <option value="#{request.contextPath}/ui/panel/accordionPanel.xhtml">Accordion</option>
@@ -568,6 +580,7 @@
                         <option value="#{request.contextPath}/ui/df/basic.xhtml">Basic</option>
                         <option value="#{request.contextPath}/ui/df/data.xhtml">Data</option>
                         <option value="#{request.contextPath}/ui/df/message.xhtml">Message</option>
+                        <option value="#{request.contextPath}/ui/df/nested.xhtml">Nested</option>
                     </optgroup>
                     <optgroup label="Misc" class="LEVEL1">
                         <option value="#{request.contextPath}/ui/misc/responsive.xhtml">Responsive</option>
@@ -620,7 +633,7 @@
                 
                 <div class="ContentSideSections">
                     <div class="Content100 overHidden TextShadow">
-                        <span class="fontSize30 TextShadow orange mediumFont marginBottom20 dispBlock"><ui:insert name="title" /></span>
+                        <span class="fontSize30 TextShadow orange regularFont marginBottom20 dispBlock"><ui:insert name="title" /></span>
                         <span class="defaultText dispTable"><ui:insert name="description" />
                         </span>
                     </div>

@@ -1,48 +1,23 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'exosemibold';
-    src: url("#{resource['main/fonts/exo-semibold-webfont.eot']}");
-    src: url("#{resource['main/fonts/exo-semibold-webfont.eot?#iefix']}") format('embedded-opentype'),
-         url("#{resource['main/fonts/exo-semibold-webfont.woff']}") format('woff'),
-         url("#{resource['main/fonts/exo-semibold-webfont.ttf']}") format('truetype'),
-         url("#{resource['main/fonts/exo-semibold-webfont.svg#exosemibold']}") format('svg');
+    font-family: 'latoblack';
+    src: url("#{resource['main/fonts/lato-black-webfont.eot']}");
+    src: url("#{resource['main/fonts/lato-black-webfont.eot?#iefix']}") format('embedded-opentype'),
+         url("#{resource['main/fonts/lato-black-webfont.woff']}") format('woff'),
+         url("#{resource['main/fonts/lato-black-webfont.ttf']}") format('truetype'),
+         url("#{resource['main/fonts/lato-black-webfont.svg#latoblack']}") format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'exobolditalic';
-    src: url("#{resource['main/fonts/exo-bolditalic-webfont.eot']}");
-    src: url("#{resource['main/fonts/exo-bolditalic-webfont.eot?#iefix']}") format('embedded-opentype'),
-         url("#{resource['main/fonts/exo-bolditalic-webfont.woff']}") format('woff'),
-         url("#{resource['main/fonts/exo-bolditalic-webfont.ttf']}") format('truetype'),
-         url("#{resource['main/fonts/exo-bolditalic-webfont.svg#exobolditalic']}") format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'exomedium';
-    src: url("#{resource['main/fonts/exo-medium-webfont.eot']}");
-    src: url("#{resource['main/fonts/exo-medium-webfont.eot?#iefix']}") format('embedded-opentype'),
-         url("#{resource['main/fonts/exo-medium-webfont.woff']}") format('woff'),
-         url("#{resource['main/fonts/exo-medium-webfont.ttf']}") format('truetype'),
-         url("#{resource['main/fonts/exo-medium-webfont.svg#exomedium']}") format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'exoregular';
-    src: url("#{resource['main/fonts/exo-regular-webfont.eot']}");
-    src: url("#{resource['main/fonts/exo-regular-webfont.eot?#iefix']}") format('embedded-opentype'),
-         url("#{resource['main/fonts/exo-regular-webfont.woff']}") format('woff'),
-         url("#{resource['main/fonts/exo-regular-webfont.ttf']}") format('truetype'),
-         url("#{resource['main/fonts/exo-regular-webfont.svg#exoregular']}") format('svg');
+    font-family: 'latoregular';
+    src: url("#{resource['main/fonts/lato-regular-webfont.eot']}");
+    src: url("#{resource['main/fonts/lato-regular-webfont.eot?#iefix']}") format('embedded-opentype'),
+         url("#{resource['main/fonts/lato-regular-webfont.woff']}") format('woff'),
+         url("#{resource['main/fonts/lato-regular-webfont.ttf']}") format('truetype'),
+         url("#{resource['main/fonts/lato-regular-webfont.svg#latoregular']}") format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -50,9 +25,9 @@
 
 /*  ----------------------------------------------------------------------------------------------------- */
 
-body{margin:0px; height:100%; overflow-x:hidden; overflow-y:auto; background-color:#20272a; font-family: 'exoregular', "Trebuchet MS", Arial, Helvetica, sans-serif;}
+body{margin:0px; height:100%; overflow-x:hidden; overflow-y:auto; background-color:#20272a; font-family: 'latoregular', "Trebuchet MS", Arial, Helvetica, sans-serif;color:#5C666A;}
 
-	#LOGOTEXTSIDE{display:block;width:290px; float:left; height:74px; z-index:999; background-image:url(#{resource['main/images/logoCircuitLines.svg']}); background-repeat:no-repeat; background-position:center right;
+	#LOGOTEXTSIDE{display:block;width:290px; float:left; height:74px; z-index:999; background-image:url("#{resource['main/images/logoCircuitLines.svg']}"); background-repeat:no-repeat; background-position:center right;
 				  margin:-20px 0px 0px 0px; padding-top:25px; line-height:30px;}
 		.logoDarkText{color:#5c666a;}
 		.logoBlueText{color:#25aae1;}
@@ -105,7 +80,7 @@ body{margin:0px; height:100%; overflow-x:hidden; overflow-y:auto; background-col
 				-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
 					.PropertyBox img{width:80%;}
 					.PropertyBox .PropertyTopic{display:block; color:#25aae1; font-size:18px;}
-					.PropertyBox .PropertyText{display:block; color:#8c9aa5; font-size:14px;}
+					.PropertyBox .PropertyText{display:block; color:#5C666A; font-size:14px;}
 					
 				.MOBILE .PropertyBox{width:27%; height:250px; float:left; padding:3%; overflow:hidden; text-align:center; border-radius:5px; -webkit-border-radius:5px; display:block;
 				-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
@@ -113,7 +88,7 @@ body{margin:0px; height:100%; overflow-x:hidden; overflow-y:auto; background-col
 					.MOBILE .PropertyBox .PropertyTopic{display:block; color:#25aae1; font-size:12px;}
 					.MOBILE .PropertyBox .PropertyText{display:block; color:#8c9aa5; font-size:11px;}
 				
-				.widgetsLink{width:90%; height:auto; background-image:url(#{resource['main/images/widgetIconCover.svg']}); background-position:top; background-repeat:no-repeat; background-size:contain; display:table;
+				.widgetsLink{width:90%; height:auto; background-image:url("#{resource['main/images/widgetIconCover.svg']}"); background-position:top; background-repeat:no-repeat; background-size:contain; display:table;
 							 text-align:center; padding:5%;}
 					.widgetsLink img{width:40%; height:auto; margin-top:5%;}
 					.widgetsLink span{ width:100%; margin-top:10px; overflow:hidden; height:50px; display:table; font-size:14px;}
@@ -123,7 +98,7 @@ body{margin:0px; height:100%; overflow-x:hidden; overflow-y:auto; background-col
 					.MOBILE .widgetsLink span{ width:100%; margin-top:0px; overflow:hidden; height:50px; display:table; font-size:11px;}
 				
 			.BoxesIndent{width:85%; float:right; padding-top:30px;}
-				.brandLogo{ background-image:url(#{resource['main/images/brandLogo.svg']}); background-repeat:no-repeat; background-position:center; background-size:contain; width:70px; height:70px; display:block;
+				.brandLogo{ background-image:url("#{resource['main/images/brandLogo.svg']}"); background-repeat:no-repeat; background-position:center; background-size:contain; width:70px; height:70px; display:block;
 				margin:10px 10px 10px 0px; float:left;}
 				
 			.MOBILE .BoxesIndent{width:85%; float:none; margin:0px auto; padding-top:30px;}
@@ -147,6 +122,7 @@ a{ text-decoration:none; outline:none;color: #25AAE1}
 .underline{ text-decoration:underline;}
 .fontSize34{font-size:34px;}
 .fontSize30{font-size:30px;}
+.fontSize28{font-size:28px;}
 .fontSize24{font-size:24px;}
 .fontSize21{font-size:21px;}
 .fontSize18{font-size:18px;}
@@ -174,10 +150,8 @@ a{ text-decoration:none; outline:none;color: #25AAE1}
 .marLefRigAuto{ margin-left:auto !important; margin-right:auto !important;}
 
 /*fonts*/
-.boldFont{font-family: 'exosemibold', "Trebuchet MS", Arial, Helvetica, sans-serif;}
-.boldItalicFont{font-family: 'exobolditalic', "Trebuchet MS", Arial, Helvetica, sans-serif;}
-.mediumFont{font-family: 'exomedium', "Trebuchet MS", Arial, Helvetica, sans-serif;}
-.regularFont{font-family: 'exoregular', "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.blackFont{font-family: 'latoblack', "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.regularFont{font-family: 'latoregular', "Trebuchet MS", Arial, Helvetica, sans-serif;}
 
 .bordersOfMenuSide{border-top:solid 1px #404a4e;}
 .hiddenIcons{opacity:0; filter:alpha(opacity=0);margin-left:-30px}
@@ -185,9 +159,8 @@ a{ text-decoration:none; outline:none;color: #25AAE1}
 .emptyBox{display:block; height:121px;}
 
 /* display */
-.dispBlock{ display:block;}
-.dispTable{ display:table;}
-.overHidden{ overflow:hidden;}
+.dispTable{display:table;}
+.overHidden{overflow:hidden;}
 
 /* floating */
 .floatRight{float:right;}
@@ -199,11 +172,11 @@ a{ text-decoration:none; outline:none;color: #25AAE1}
 .Content100{width:100%;}
 
 /* general text styles */
-.defaultText{font-size:18px; color:#84939f;}
+.defaultText{font-size:18px; color:#5C666A;}
 .defaultTopic{font-size:46px; color:#e26e60; line-height:46px; padding:10px 0px 10px 0px;}
 
 /* buttons */
-.BigButton{width:90%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; display:table; font-size:18px; font-family: 'exobolditalic', "Trebuchet MS", Arial, Helvetica, sans-serif; color:#404c51; margin:10px 0px 10px 0px; cursor:pointer;
+.BigButton{width:90%; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; display:table; font-size:18px; font-family: 'latoblack', "Trebuchet MS", Arial, Helvetica, sans-serif; color:#404c51; margin:10px 0px 10px 0px; cursor:pointer;
 padding:20px; border-radius:5px; border-right:solid 60px #404c51;}
 	.BigButton img{ margin-right:-60px; height:23px;}	
 
@@ -214,7 +187,7 @@ padding:20px; border-radius:5px; border-right:solid 60px #404c51;}
 	
 /* text colors */
 .orange{color:#fca752;}
-.gray{color:#84939f;}
+.gray{color:#5C666A;}
 .pink{color:#e26e61;}
 .yellow{color:#fdd106;}
 .green{color:#39b54a;}
@@ -245,7 +218,7 @@ input.searchInput {
 }
 
 .Implementation {
-    background-color:#dfe4e6;
+    background-color:#ffffff;
 }
 
 .Implementation h3 {
@@ -302,7 +275,7 @@ input.searchInput {
 
 .Source .ui-tabs .ui-tabs-nav li.ui-state-default a {
     color: #84939F;
-    font-family: 'exoregular', "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: 'latoregular', "Trebuchet MS", Arial, Helvetica, sans-serif;
     text-shadow: none;
 }
 
@@ -444,7 +417,8 @@ input.searchInput {
 .ui-theme.ui-theme-humanity{ background-position: 0 -1534px; width: 30px; height: 27px; } 
 .ui-theme.ui-theme-le-frog{ background-position: 0 -1611px; width: 30px; height: 27px; } 
 .ui-theme.ui-theme-midnight{ background-position: 0 -1688px; width: 30px; height: 27px; } 
-.ui-theme.ui-theme-mint-choc{ background-position: 0 -1765px; width: 30px; height: 27px; } 
+.ui-theme.ui-theme-mint-choc{ background-position: 0 -1765px; width: 30px; height: 27px; }
+.ui-theme.ui-theme-omega{ background-position: 0 -915px; width: 30px; height: 30px; } 
 .ui-theme.ui-theme-overcast{ background-position: 0 -1842px; width: 30px; height: 27px; } 
 .ui-theme.ui-theme-pepper-grinder{ background-position: 0 -1919px; width: 30px; height: 27px; } 
 .ui-theme.ui-theme-redmond{ background-position: -80px 0; width: 30px; height: 27px; } 
